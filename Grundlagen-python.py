@@ -26,3 +26,6 @@ else:
 
     runden = input("Wie viele Runden sollen wir Spielen? ")
     runden = int(runden)
+
+    for runde in range(1,runde):
+        print("Runde" , runde, "von", runden, ": Sieger :", "ich")

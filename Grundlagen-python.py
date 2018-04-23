@@ -15,4 +15,7 @@ print(heimat, "an World: ", "Hallo!")
 wer = input("Und wer bist du? ")
 
 # und gibt den text wieder aus
-print ("Hallo ", wer)
+if (wer == "ich"):
+    print ("Hallo DU!")
+else:
+    print("Hallo", wer)    

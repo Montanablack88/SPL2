@@ -1,5 +1,5 @@
  #Grundlagen-Python.py
-
+import random
 # Kommentare efolgen mit Hashtack
 
 # Ausgabe von daten
@@ -27,5 +27,14 @@ else:
     runden = input("Wie viele Runden sollen wir Spielen? ")
     runden = int(runden)
 
-    for runde in range(1,runde):
+    for runde in range(1,runden+1):
+        sieger = ""
+        #zufallszahl erzeugen
+        zufallszahl = random.randint(1,6)
+        #sonst ist der Computer sieger
+        if (zufallszahl == 1 or zufallszahl == 3 or zufallszahl == 5):
+            sieger = "ich"
+            else:
+                sieger = "computer"
         print("Runde" , runde, "von", runden, ": Sieger :", "ich")
+        print("game over.")
